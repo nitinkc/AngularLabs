@@ -1,3 +1,11 @@
+ng generate component Dashboard --dry-run
+ng generate component Dashboard
+ng generate component inventory
+ng generate component --flat shipping/shipOrder --dry-run
+ng generate component --flat receiving/receiveProduct
+ng generate component --flat shipping/OrdersToShip
+
+
 # Warehouse
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
