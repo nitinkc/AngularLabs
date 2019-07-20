@@ -4,11 +4,15 @@
 <div class="alert alert-info">
     <h3>Instructions</h3>
     <div [ngSwitch]=[order.status]> 
-        <ol>
-            <li *ngSwitchCase="0">Click a <i>Get best location</i> button and the system will tell you the best place to pick up your item.</li>
-            <li *ngSwitchCase="1">Pick the items and check the <i>Got it</i> box.</li>
-            <li *ngSwitchCase="2">After you've picked, packed, and shipped your last item, click <i>Mark as shipped</i></li>
-        </ol>
+        <div *ngSwitchCase="0">
+            Click a <i>Get best location</i> button and the system will tell you the best place to pick up your item.
+        </div>
+        <div *ngSwitchCase="1" class="alert alert-danger">
+            Pick the items and check the <i>Got it</i> box.
+        </div>
+        <div *ngSwitchCase="2" class="alert alert-danger">
+            After you've picked, packed, and shipped your last item, click <i>Mark as shipped</i>
+        </div>
     </div>
     
     <p> If there's a problem and you need a supervisor to look at it, hit the "Problem" button.</p>
