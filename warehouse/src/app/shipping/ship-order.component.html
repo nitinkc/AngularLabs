@@ -36,19 +36,12 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr *ngFor="let orders of order.lines">
                 <td><input type="checkbox" class="big-checkbox"></td>
                 <button class="btn">Get best location</button>
-                <td>{{order.orderID}}</td>
-                <td><img src="/assets/images/productImages/30.jpg"></td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox"></td>
-                <button class="btn">Get best location</button>
-                <td>{{order.orderID}}</td>
-                <td><img src="/assets/images/productImages/54.jpg"></td>
-                <td>20</td>
+                <td>{{orders.productID}}</td>
+                <td><img src={{orders.product.imageUrl}}></td>
+                <td>{{orders.quantity}}</td>
             </tr>
         </tbody>
     </table>
