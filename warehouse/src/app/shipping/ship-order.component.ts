@@ -40,7 +40,7 @@ export class ShipOrderComponent implements OnInit {
     line1.product.name = "Oreos";
     line1.product.imageUrl = "/assets/images/productImages/34.jpg";
     const line2 = new OrderLine();
-    line2.locationID = "05A3A";
+    // line2.locationID = "05A3A";
     line2.price = 30.00;
     line2.productID = 45;
     line2.quantity = 7;

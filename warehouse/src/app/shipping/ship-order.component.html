@@ -38,7 +38,12 @@
         <tbody>
             <tr *ngFor="let orders of order.lines">
                 <td><input type="checkbox" class="big-checkbox"></td>
-                <button class="btn">Get best location</button>
+                <span *ngIf="orders.locationID; else showButton">
+                    {{orders.locationID}}
+                </span>
+                <ng-template #showButton>
+                    <button class="btn btn-info">Get best location</button>
+                </ng-template>
                 <td>{{orders.productID}}</td>
                 <td><img src={{orders.product.imageUrl}}></td>
                 <td>{{orders.quantity}}</td>
