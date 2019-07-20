@@ -1,4 +1,8 @@
-<div class="alert alert-success">
+<div [ngClass]="{
+'alert alert-success':[order.status] == '0',
+'alert alert-danger':[order.status] == '1',
+'alert alert-danger':[order.status] == '2'
+}">
     Order status: Ready to ship
 </div>
 <div class="alert alert-info">
@@ -20,7 +24,7 @@
 <section id="orderInfo">
     <ul class="list-group">
         <li class="list-group-item">
-            Order number: 11065
+            Order number: {{order.orderID}}
         </li>
         <li class="list-group-item">
             Order date: {{order.orderDate}}
