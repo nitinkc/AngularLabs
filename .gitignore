@@ -8,3 +8,5 @@ warehouse/dist
 jspm_packages
 bower_components
 99_final
+
+.idea/
