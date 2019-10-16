@@ -7,9 +7,9 @@
       </div>
       <div class="collapse navbar-collapse" id="header-menu">
         <ul class="nav navbar-nav">
-          <li><a href="#">Ship Orders</a></li>
-          <li><a href="#">Receive Product</a></li>
-          <li><a href="#">Take Inventory</a></li>
+          <li><a [routerLink]="['ship']">Ship Orders</a></li>
+          <li><a [routerLink]="['receive']">Receive Product</a></li>
+          <li><a [routerLink]="['inventory']">Take Inventory</a></li>
         </ul>
       </div>
     </div>
@@ -19,7 +19,10 @@
     <h1>{{title}}</h1>
   </section>
 </header>
+
+<router-outlet></router-outlet>
 <main>
+  <!-- <nwh-app></nwh-app> -->
  <nwh-dashboard></nwh-dashboard>
  <nwh-ship-order></nwh-ship-order>
 </main>
