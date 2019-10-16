@@ -1,3 +1,11 @@
+# Run
+
+``npm install``
+
+``ng build``
+
+``ng serve``
+
 ng generate component Dashboard --dry-run
 ng generate component Dashboard
 ng generate component inventory
